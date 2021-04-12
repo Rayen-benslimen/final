@@ -1,0 +1,42 @@
+<table class="table" >
+  <thead>
+  <tr>
+    <th scope="col">Nom</th>
+    <th scope="col">Prénom</th>
+    <th scope="col">Corps</th>
+    <th scope="col">Grade</th>
+    <th scope="col">Salaire de base</th>
+    <th scope="col">somme</th>
+    <th scope="col">Salaire Brute</th>
+    <th scope="col">Salaire net</th>
+    <th scope="col">Net a payé</th>
+  </tr>
+  </thead>
+  <tbody  *ngFor="let item of listcalculadmin">
+  <tr *ngIf="num == 2">
+    <td>{{ item.nom }}</td>
+    <td>{{ item.prenom }}</td>
+    <td>{{ item.corps }}</td>
+    <td>{{ item.grade }}</td>
+    <td>{{ item.salairedebase }}</td>
+    <td>{{ item.somme }}</td>
+    <td>{{ item.brute1 }}</td>
+    <td>{{ item.salairenet }}</td>
+    <td>{{ item.netapaie }}</td>
+  </tr>
+  </tbody>
+  <tbody  *ngFor="let item of listcalcul">
+  <tr *ngIf="num != 2">
+    <td>{{ item.nom }}</td>
+    <td>{{ item.prenom }}</td>
+    <td>{{ item.corps }}</td>
+    <td>{{ item.grade }}</td>
+    <td>{{ item.salairedebase }}</td>
+    <td>{{ item.somme }}</td>
+    <td>{{ item.brute1 }}</td>
+    <td>{{ item.salairenet }}</td>
+    <td>{{ item.netapaie }}</td>
+  </tr>
+  </tbody>
+</table>
+
