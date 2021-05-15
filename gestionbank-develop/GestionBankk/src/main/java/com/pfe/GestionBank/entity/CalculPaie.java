@@ -11,25 +11,25 @@ public class CalculPaie {
 	private String corps ; 
 	private String grade ;
 	private long salairedebase ;
-	private long somme  ;
+	private float somme  ;
 	private long taux ;
-	private long brute1 ; 
-	private long brute2 ; 
-	private long brute3 ; 
+	private float brute1 ; 
+	private float brute2 ; 
+	private float brute3 ; 
 	private int nombreenfant ; 
-	private long brutefinal ; 
-	private long salairenet ; 
-	private long netapaie ; 
-	private long sandic ;
-	private long assurance ;
+	private float brutefinal ; 
+	private float salairenet ; 
+	private float netapaie ; 
+	private float sandic ;
+	private float assurance ;
 	private int userid ; 
 	
 	
 
 
-	public CalculPaie(String nom, String prenom, String corps, String grade, long salairedebase, long somme, long taux,
-			long brute1, long brute2, long brute3, int nombreenfant, long brutefinal, long salairenet, long netapaie,
-			long sandic, long assurance , int userid) {
+	public CalculPaie(String nom, String prenom, String corps, String grade, long salairedebase, float somme, long taux,
+			float brute12, float brute22, float brute32, int nombreenfant, float brutefinal2, float salairenet2, float netapaie2,
+			float sandic2, float assurance2 , int userid) {
 		
 		this.nom = nom;
 		this.prenom = prenom;
@@ -38,15 +38,15 @@ public class CalculPaie {
 		this.salairedebase = salairedebase;
 		this.somme = somme;
 		this.taux = taux;
-		this.brute1 = brute1;
-		this.brute2 = brute2;
-		this.brute3 = brute3;
+		this.brute1 = brute12;
+		this.brute2 = brute22;
+		this.brute3 = brute32;
 		this.nombreenfant = nombreenfant;
-		this.brutefinal = brutefinal;
-		this.salairenet = salairenet;
-		this.netapaie = netapaie;
-		this.sandic = sandic;
-		this.assurance = assurance;
+		this.brutefinal = brutefinal2;
+		this.salairenet = salairenet2;
+		this.netapaie = netapaie2;
+		this.sandic = sandic2;
+		this.assurance = assurance2;
 		this.userid = userid ;
 	}
 
@@ -110,7 +110,7 @@ public class CalculPaie {
 
 
 
-	public long getSomme() {
+	public float getSomme() {
 		return somme;
 	}
 
@@ -134,7 +134,7 @@ public class CalculPaie {
 
 
 
-	public long getBrute1() {
+	public float getBrute1() {
 		return brute1;
 	}
 
@@ -146,7 +146,7 @@ public class CalculPaie {
 
 
 
-	public long getBrute2() {
+	public float getBrute2() {
 		return brute2;
 	}
 
@@ -158,7 +158,7 @@ public class CalculPaie {
 
 
 
-	public long getBrute3() {
+	public float getBrute3() {
 		return brute3;
 	}
 
@@ -182,7 +182,7 @@ public class CalculPaie {
 
 
 
-	public long getBrutefinal() {
+	public float getBrutefinal() {
 		return brutefinal;
 	}
 
@@ -194,7 +194,7 @@ public class CalculPaie {
 
 
 
-	public long getSalairenet() {
+	public float getSalairenet() {
 		return salairenet;
 	}
 
@@ -206,7 +206,7 @@ public class CalculPaie {
 
 
 
-	public long getNetapaie() {
+	public float getNetapaie() {
 		return netapaie;
 	}
 
@@ -218,7 +218,7 @@ public class CalculPaie {
 
 
 
-	public long getSandic() {
+	public float getSandic() {
 		return sandic;
 	}
 
@@ -230,7 +230,7 @@ public class CalculPaie {
 
 
 
-	public long getAssurance() {
+	public float getAssurance() {
 		return assurance;
 	}
 
@@ -251,14 +251,4 @@ public class CalculPaie {
 	public void setUserid(int userid) {
 		this.userid = userid;
 	}
-	
-	
-
-	
-
-	
-	
-	
-	
-
 }
